@@ -1,0 +1,52 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header  {
+    border-bottom: 1px solid teal;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header img {
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    margin: 1em 0;
+}
+
+header h1 {
+    padding: .5em;
+    padding-left: 0;
+}
+
+header h2 {
+    padding: .5em;
+    padding-left: 0;
+}
+
+header a {
+    padding: .25em 0;
+    text-decoration: none;
+    color: teal;
+}
+
+.contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.skills {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.list-of-skills {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
