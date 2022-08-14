@@ -4,9 +4,24 @@
     box-sizing: border-box;
 }
 
-.dark-mode {
+.dark-mode * {
     color: #fff;
     background-color: #000;
+}
+
+.dark-mode li {
+  color: #fff;
+}
+
+.dark-mode h4 {
+  color: #a00;
+}
+
+
+.title {
+  margin-top: 2em;
+  font-size: 2em;
+  border-bottom: 1px solid teal;
 }
 
 header  {
@@ -46,6 +61,7 @@ header a {
 }
 
 @media (min-width: 400px) and (max-width: 900px) {
+  
   header {
     flex-direction: column;
     padding: 0 1em;
@@ -63,7 +79,7 @@ header a {
     display: flex;
     flex-direction: row;
     gap: 1em;
-    margin-bottom: 2em;
+    margin-bottom: 1em;
   }
   
   header img {
@@ -76,7 +92,7 @@ header a {
   }
   
   main h2 {
-    margin-bottom: .5em;
+    margin: 1.5em 0 .5em 0;
   }
   
   main h3 {
@@ -84,12 +100,48 @@ header a {
     font-weight: 500;
   }
   
+  main h4 {
+    margin: .25em 0;
+    color: rgba(100, 0, 0, .7);
+  }
+  
   main ul {
-    padding-left: 1em;
+    padding-left: 1.5em;
     margin-bottom: 2em;
+    color: rgba(0, 0, 0, .8);
   }
   
   main ol {
-    padding-left: 1.5em;
+    padding-left: 2em;
+  }
+  
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 0 1.5em;
+  }
+  
+  .education {
+    margin-bottom: 2em;
+  }
+  
+  .education h2 {
+    margin-top: 1.5em;
+  }
+  
+  .education h4 {
+    margin-bottom: 1em;
+  }
+  
+  footer {
+    margin-top: 1em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  footer h5 {
+    padding: .5em;
   }
 }
