@@ -27,6 +27,7 @@ const trans = (index) => {
 const moveIt = () => {
   if (start > end && (start - end) > 100 && count < 4) count++;
   if (start < end && (end - start) > 100 && count > 0) count--;
+  works.forEach(work => work.style.transition = '500ms ease-in-out');
   works.forEach(work => work.style.transform = `translateX(-${count}00%)`);
   navIndicate(count);
 };
@@ -34,6 +35,7 @@ const moveIt = () => {
 body.addEventListener('dblclick', (e) => {
     e.preventDefault();
     all.classList.toggle('dark-mode');
+    works.forEach(work => work.style.transition = 'none');
     navIndicate(count);
 });
 navDots.forEach((dot, index) => {
