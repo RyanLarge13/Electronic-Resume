@@ -119,12 +119,14 @@ header a {
     display: flex;
     overflow-x: hidden;
     position: relative;
+    gap: 0;
   }
   
   .work {
-    margin-right: 1em;
-    padding-right: 2em;
+    padding-right: 5em;
     min-width: 100vw;
+    max-width: 100vw;
+    width: 100vw;
     transition: 500ms ease-in-out;
   }
   

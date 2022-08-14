@@ -8,10 +8,9 @@ let end;
 let count = 0;
 
 const moveIt = () => {
- //const width = works[0].clientWidth;
   if (start > end) count--;
   if (start < end) count++;
-  works.forEach(work => work.style.transform = 'translateX(' + count + '00%)');
+  works.forEach(work => work.style.transform = `translateX(${count}00%)`);
 };
 
 body.addEventListener('dblclick', (e) => {
