@@ -19,9 +19,14 @@ const navIndicate = (count) => {
   navDots[count].style.backgroundColor = 'rgba(100, 0, 0, .7';
 };
 
+const trans = (index) => {
+  count = index;
+  moveIt();
+};
+
 const moveIt = () => {
-  if (start > end && count < 4) count++;
-  if (start < end && count > 0) count--;
+  if (start > end && (start - end) > 100 && count < 4) count++;
+  if (start < end && (end - start) > 100 && count > 0) count--;
   works.forEach(work => work.style.transform = `translateX(-${count}00%)`);
   navIndicate(count);
 };
@@ -30,6 +35,11 @@ body.addEventListener('dblclick', (e) => {
     e.preventDefault();
     all.classList.toggle('dark-mode');
     navIndicate(count);
+});
+navDots.forEach((dot, index) => {
+  dot.addEventListener('click', () => {
+    trans(index);
+  });
 });
 navDots[0].style.backgroundColor = 'rgba(100, 0, 0, .7';
 works.forEach(work => work.addEventListener('touchstart', (e) => start = e.touches[0].pageX));
