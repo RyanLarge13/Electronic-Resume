@@ -118,12 +118,33 @@ header a {
   .work-experience {
     display: flex;
     overflow-x: hidden;
+    position: relative;
   }
   
   .work {
     margin-right: 1em;
     padding-right: 2em;
     min-width: 100vw;
+    transition: 500ms ease-in-out;
+  }
+  
+  .nav-dots {
+    position: absolute;
+    left: 5%;
+    display: flex;
+    bottom: 0;
+  }
+  
+  .dot {
+    margin: 0 .25em;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: rgba(0, 0, 0, .5);
+  }
+  
+  .dark-mode .dot {
+    background-color: white;
   }
   
   .grid {
