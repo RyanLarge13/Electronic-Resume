@@ -191,7 +191,8 @@ footer {
   .grid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 0 1.5em;
+    gap: 0 3em;
+    transform: translateX(-1em);
   }
   
   .education {
