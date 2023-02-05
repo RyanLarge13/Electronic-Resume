@@ -26,10 +26,9 @@
 }
 
 header {
-  box-shadow: 0 0.01em 0.5em 0 teal;
   display: flex;
   align-items: start;
-  border-radius: 0 0 15px 15px;
+  border-bottom: 1px solid black;
 }
 
 header img {
@@ -112,6 +111,10 @@ main ol {
   grid-template-columns: repeat(3, 1fr);
 }
 
+.grid li {
+  list-style-type: none;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -132,6 +135,21 @@ footer {
 
 .social-links i {
   font-size: 1.25em;
+}
+
+@media (prefers-color-scheme: dark) {
+  * {
+    color: #fff;
+    background-color: #000;
+  }
+
+  li {
+    color: #fff;
+  }
+
+  h4 {
+    color: #a00 !important;
+  }
 }
 
 @media (min-width: 300px) and (max-width: 900px) {
