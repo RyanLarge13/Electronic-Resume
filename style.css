@@ -26,9 +26,9 @@
 }
 
 header {
+  box-shadow: 0 0.01em 0.5em 0 teal;
   display: flex;
-  align-items: start;
-  border-bottom: 1px solid black;
+  align-items: space-around;
 }
 
 header img {
