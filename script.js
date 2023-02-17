@@ -23,7 +23,7 @@ const transWork = (index) => {
   start = 0;
   end = 0;
   count = index;
-  moveIt();
+  moveWorkHistory();
 };
 
 const moveIt = () => {
